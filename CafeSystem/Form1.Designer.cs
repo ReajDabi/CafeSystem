@@ -49,31 +49,17 @@
             btnSDrink = new Button();
             btnOrder = new Button();
             btnClear = new Button();
-            textBox1 = new TextBox();
-            nudBurger = new NumericUpDown();
-            nudCS = new NumericUpDown();
-            nudFF = new NumericUpDown();
-            nudSD = new NumericUpDown();
-            nudSpag = new NumericUpDown();
-            nudIT = new NumericUpDown();
-            nudC = new NumericUpDown();
-            nudBW = new NumericUpDown();
+            txtResult = new TextBox();
+            lblOrders = new Label();
             ((System.ComponentModel.ISupportInitialize)View).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)nudBurger).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)nudCS).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)nudFF).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)nudSD).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)nudSpag).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)nudIT).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)nudC).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)nudBW).BeginInit();
             SuspendLayout();
             // 
             // btnBurger
             // 
-            btnBurger.Location = new Point(29, 141);
+            btnBurger.Location = new Point(41, 235);
+            btnBurger.Margin = new Padding(4, 5, 4, 5);
             btnBurger.Name = "btnBurger";
-            btnBurger.Size = new Size(89, 84);
+            btnBurger.Size = new Size(127, 140);
             btnBurger.TabIndex = 0;
             btnBurger.Text = "Burger";
             btnBurger.UseVisualStyleBackColor = true;
@@ -81,9 +67,10 @@
             // 
             // btnChickenSand
             // 
-            btnChickenSand.Location = new Point(142, 141);
+            btnChickenSand.Location = new Point(203, 235);
+            btnChickenSand.Margin = new Padding(4, 5, 4, 5);
             btnChickenSand.Name = "btnChickenSand";
-            btnChickenSand.Size = new Size(89, 84);
+            btnChickenSand.Size = new Size(127, 140);
             btnChickenSand.TabIndex = 0;
             btnChickenSand.Text = "Chicken Sandwich";
             btnChickenSand.UseVisualStyleBackColor = true;
@@ -91,9 +78,10 @@
             // 
             // btnSpag
             // 
-            btnSpag.Location = new Point(369, 141);
+            btnSpag.Location = new Point(527, 235);
+            btnSpag.Margin = new Padding(4, 5, 4, 5);
             btnSpag.Name = "btnSpag";
-            btnSpag.Size = new Size(89, 84);
+            btnSpag.Size = new Size(127, 140);
             btnSpag.TabIndex = 0;
             btnSpag.Text = "Spaghetti";
             btnSpag.UseVisualStyleBackColor = true;
@@ -101,9 +89,10 @@
             // 
             // btnFrenchFries
             // 
-            btnFrenchFries.Location = new Point(256, 141);
+            btnFrenchFries.Location = new Point(366, 235);
+            btnFrenchFries.Margin = new Padding(4, 5, 4, 5);
             btnFrenchFries.Name = "btnFrenchFries";
-            btnFrenchFries.Size = new Size(89, 84);
+            btnFrenchFries.Size = new Size(127, 140);
             btnFrenchFries.TabIndex = 0;
             btnFrenchFries.Text = "French Fries";
             btnFrenchFries.UseVisualStyleBackColor = true;
@@ -112,19 +101,21 @@
             // lblFood
             // 
             lblFood.AutoSize = true;
-            lblFood.Font = new Font("Stencil", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblFood.Location = new Point(29, 53);
+            lblFood.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblFood.Location = new Point(41, 88);
+            lblFood.Margin = new Padding(4, 0, 4, 0);
             lblFood.Name = "lblFood";
-            lblFood.Size = new Size(100, 38);
+            lblFood.Size = new Size(166, 55);
             lblFood.TabIndex = 1;
             lblFood.Text = "FOOD";
             lblFood.Click += label1_Click;
             // 
             // btnTea
             // 
-            btnTea.Location = new Point(142, 396);
+            btnTea.Location = new Point(203, 660);
+            btnTea.Margin = new Padding(4, 5, 4, 5);
             btnTea.Name = "btnTea";
-            btnTea.Size = new Size(89, 84);
+            btnTea.Size = new Size(127, 140);
             btnTea.TabIndex = 0;
             btnTea.Text = "Iced Tea";
             btnTea.UseVisualStyleBackColor = true;
@@ -132,9 +123,10 @@
             // 
             // btnCoffee
             // 
-            btnCoffee.Location = new Point(369, 396);
+            btnCoffee.Location = new Point(527, 660);
+            btnCoffee.Margin = new Padding(4, 5, 4, 5);
             btnCoffee.Name = "btnCoffee";
-            btnCoffee.Size = new Size(89, 84);
+            btnCoffee.Size = new Size(127, 140);
             btnCoffee.TabIndex = 0;
             btnCoffee.Text = "Coffee";
             btnCoffee.UseVisualStyleBackColor = true;
@@ -142,9 +134,10 @@
             // 
             // btnWater
             // 
-            btnWater.Location = new Point(256, 396);
+            btnWater.Location = new Point(366, 660);
+            btnWater.Margin = new Padding(4, 5, 4, 5);
             btnWater.Name = "btnWater";
-            btnWater.Size = new Size(89, 84);
+            btnWater.Size = new Size(127, 140);
             btnWater.TabIndex = 0;
             btnWater.Text = "Bottled Water";
             btnWater.UseVisualStyleBackColor = true;
@@ -153,10 +146,11 @@
             // lblDrink
             // 
             lblDrink.AutoSize = true;
-            lblDrink.Font = new Font("Stencil", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblDrink.Location = new Point(29, 307);
+            lblDrink.Font = new Font("Microsoft Sans Serif", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblDrink.Location = new Point(41, 512);
+            lblDrink.Margin = new Padding(4, 0, 4, 0);
             lblDrink.Name = "lblDrink";
-            lblDrink.Size = new Size(121, 32);
+            lblDrink.Size = new Size(181, 47);
             lblDrink.TabIndex = 1;
             lblDrink.Text = "DRINKS";
             lblDrink.Click += label1_Click;
@@ -164,9 +158,10 @@
             // lbl
             // 
             lbl.AutoSize = true;
-            lbl.Location = new Point(54, 237);
+            lbl.Location = new Point(77, 395);
+            lbl.Margin = new Padding(4, 0, 4, 0);
             lbl.Name = "lbl";
-            lbl.Size = new Size(26, 15);
+            lbl.Size = new Size(43, 25);
             lbl.TabIndex = 3;
             lbl.Text = "₱85";
             lbl.Click += label2_Click;
@@ -174,45 +169,50 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(168, 237);
+            label3.Location = new Point(240, 395);
+            label3.Margin = new Padding(4, 0, 4, 0);
             label3.Name = "label3";
-            label3.Size = new Size(26, 15);
+            label3.Size = new Size(43, 25);
             label3.TabIndex = 3;
             label3.Text = "₱75";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(290, 237);
+            label4.Location = new Point(414, 395);
+            label4.Margin = new Padding(4, 0, 4, 0);
             label4.Name = "label4";
-            label4.Size = new Size(26, 15);
+            label4.Size = new Size(43, 25);
             label4.TabIndex = 3;
             label4.Text = "₱95";
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(402, 237);
+            label5.Location = new Point(574, 395);
+            label5.Margin = new Padding(4, 0, 4, 0);
             label5.Name = "label5";
-            label5.Size = new Size(26, 15);
+            label5.Size = new Size(43, 25);
             label5.TabIndex = 3;
             label5.Text = "₱50";
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(54, 497);
+            label6.Location = new Point(77, 828);
+            label6.Margin = new Padding(4, 0, 4, 0);
             label6.Name = "label6";
-            label6.Size = new Size(26, 15);
+            label6.Size = new Size(43, 25);
             label6.TabIndex = 3;
             label6.Text = "₱35";
             // 
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(168, 497);
+            label7.Location = new Point(240, 828);
+            label7.Margin = new Padding(4, 0, 4, 0);
             label7.Name = "label7";
-            label7.Size = new Size(26, 15);
+            label7.Size = new Size(43, 25);
             label7.TabIndex = 3;
             label7.Text = "₱40";
             label7.Click += label7_Click;
@@ -220,35 +220,40 @@
             // label8
             // 
             label8.AutoSize = true;
-            label8.Location = new Point(290, 497);
+            label8.Location = new Point(414, 828);
+            label8.Margin = new Padding(4, 0, 4, 0);
             label8.Name = "label8";
-            label8.Size = new Size(26, 15);
+            label8.Size = new Size(43, 25);
             label8.TabIndex = 3;
             label8.Text = "₱45";
             // 
             // label9
             // 
             label9.AutoSize = true;
-            label9.Location = new Point(402, 497);
+            label9.Location = new Point(574, 828);
+            label9.Margin = new Padding(4, 0, 4, 0);
             label9.Name = "label9";
-            label9.Size = new Size(26, 15);
+            label9.Size = new Size(43, 25);
             label9.TabIndex = 3;
             label9.Text = "₱25";
             // 
             // View
             // 
             View.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            View.Location = new Point(581, 75);
+            View.Location = new Point(830, 125);
+            View.Margin = new Padding(4, 5, 4, 5);
             View.Name = "View";
-            View.Size = new Size(240, 324);
+            View.RowHeadersWidth = 62;
+            View.Size = new Size(343, 540);
             View.TabIndex = 4;
             View.CellContentClick += View_CellContentClick;
             // 
             // btnSDrink
             // 
-            btnSDrink.Location = new Point(29, 396);
+            btnSDrink.Location = new Point(41, 660);
+            btnSDrink.Margin = new Padding(4, 5, 4, 5);
             btnSDrink.Name = "btnSDrink";
-            btnSDrink.Size = new Size(89, 84);
+            btnSDrink.Size = new Size(127, 140);
             btnSDrink.TabIndex = 0;
             btnSDrink.Text = "Soft Drink";
             btnSDrink.UseVisualStyleBackColor = true;
@@ -256,102 +261,55 @@
             // 
             // btnOrder
             // 
-            btnOrder.Location = new Point(722, 497);
+            btnOrder.BackColor = Color.FromArgb(192, 255, 192);
+            btnOrder.Location = new Point(1031, 828);
+            btnOrder.Margin = new Padding(4, 5, 4, 5);
             btnOrder.Name = "btnOrder";
-            btnOrder.Size = new Size(99, 34);
+            btnOrder.Size = new Size(141, 57);
             btnOrder.TabIndex = 5;
             btnOrder.Text = "ORDER";
-            btnOrder.UseVisualStyleBackColor = true;
+            btnOrder.UseVisualStyleBackColor = false;
             btnOrder.Click += btnOrder_Click;
             // 
             // btnClear
             // 
-            btnClear.Location = new Point(581, 497);
+            btnClear.BackColor = Color.FromArgb(255, 192, 192);
+            btnClear.Location = new Point(830, 828);
+            btnClear.Margin = new Padding(4, 5, 4, 5);
             btnClear.Name = "btnClear";
-            btnClear.Size = new Size(87, 34);
+            btnClear.Size = new Size(124, 57);
             btnClear.TabIndex = 5;
             btnClear.Text = "CLEAR";
-            btnClear.UseVisualStyleBackColor = true;
+            btnClear.UseVisualStyleBackColor = false;
+            btnClear.Click += btnClear_Click;
             // 
-            // textBox1
+            // txtResult
             // 
-            textBox1.Location = new Point(581, 405);
-            textBox1.Multiline = true;
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(240, 86);
-            textBox1.TabIndex = 6;
+            txtResult.Location = new Point(830, 675);
+            txtResult.Margin = new Padding(4, 5, 4, 5);
+            txtResult.Multiline = true;
+            txtResult.Name = "txtResult";
+            txtResult.Size = new Size(341, 141);
+            txtResult.TabIndex = 6;
             // 
-            // nudBurger
+            // lblOrders
             // 
-            nudBurger.Location = new Point(29, 268);
-            nudBurger.Name = "nudBurger";
-            nudBurger.Size = new Size(57, 23);
-            nudBurger.TabIndex = 7;
-            nudBurger.ValueChanged += nudBurger_ValueChanged;
-            // 
-            // nudCS
-            // 
-            nudCS.Location = new Point(142, 268);
-            nudCS.Name = "nudCS";
-            nudCS.Size = new Size(57, 23);
-            nudCS.TabIndex = 7;
-            // 
-            // nudFF
-            // 
-            nudFF.Location = new Point(259, 268);
-            nudFF.Name = "nudFF";
-            nudFF.Size = new Size(57, 23);
-            nudFF.TabIndex = 7;
-            // 
-            // nudSD
-            // 
-            nudSD.Location = new Point(29, 530);
-            nudSD.Name = "nudSD";
-            nudSD.Size = new Size(57, 23);
-            nudSD.TabIndex = 7;
-            // 
-            // nudSpag
-            // 
-            nudSpag.Location = new Point(371, 268);
-            nudSpag.Name = "nudSpag";
-            nudSpag.Size = new Size(57, 23);
-            nudSpag.TabIndex = 7;
-            // 
-            // nudIT
-            // 
-            nudIT.Location = new Point(142, 530);
-            nudIT.Name = "nudIT";
-            nudIT.Size = new Size(57, 23);
-            nudIT.TabIndex = 7;
-            // 
-            // nudC
-            // 
-            nudC.Location = new Point(369, 530);
-            nudC.Name = "nudC";
-            nudC.Size = new Size(57, 23);
-            nudC.TabIndex = 7;
-            // 
-            // nudBW
-            // 
-            nudBW.Location = new Point(256, 530);
-            nudBW.Name = "nudBW";
-            nudBW.Size = new Size(57, 23);
-            nudBW.TabIndex = 7;
+            lblOrders.AutoSize = true;
+            lblOrders.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblOrders.Location = new Point(877, 45);
+            lblOrders.Margin = new Padding(4, 0, 4, 0);
+            lblOrders.Name = "lblOrders";
+            lblOrders.Size = new Size(236, 55);
+            lblOrders.TabIndex = 1;
+            lblOrders.Text = "ORDERS";
+            lblOrders.Click += label1_Click;
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(866, 670);
-            Controls.Add(nudBW);
-            Controls.Add(nudC);
-            Controls.Add(nudIT);
-            Controls.Add(nudSpag);
-            Controls.Add(nudSD);
-            Controls.Add(nudFF);
-            Controls.Add(nudCS);
-            Controls.Add(nudBurger);
-            Controls.Add(textBox1);
+            ClientSize = new Size(1237, 1050);
+            Controls.Add(txtResult);
             Controls.Add(btnClear);
             Controls.Add(btnOrder);
             Controls.Add(View);
@@ -364,6 +322,7 @@
             Controls.Add(label3);
             Controls.Add(lbl);
             Controls.Add(lblDrink);
+            Controls.Add(lblOrders);
             Controls.Add(lblFood);
             Controls.Add(btnWater);
             Controls.Add(btnCoffee);
@@ -373,17 +332,10 @@
             Controls.Add(btnSpag);
             Controls.Add(btnChickenSand);
             Controls.Add(btnBurger);
+            Margin = new Padding(4, 5, 4, 5);
             Name = "Form1";
             Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)View).EndInit();
-            ((System.ComponentModel.ISupportInitialize)nudBurger).EndInit();
-            ((System.ComponentModel.ISupportInitialize)nudCS).EndInit();
-            ((System.ComponentModel.ISupportInitialize)nudFF).EndInit();
-            ((System.ComponentModel.ISupportInitialize)nudSD).EndInit();
-            ((System.ComponentModel.ISupportInitialize)nudSpag).EndInit();
-            ((System.ComponentModel.ISupportInitialize)nudIT).EndInit();
-            ((System.ComponentModel.ISupportInitialize)nudC).EndInit();
-            ((System.ComponentModel.ISupportInitialize)nudBW).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -412,14 +364,7 @@
         private Button btnSDrink;
         private Button btnOrder;
         private Button btnClear;
-        private TextBox textBox1;
-        private NumericUpDown nudBurger;
-        private NumericUpDown nudCS;
-        private NumericUpDown nudFF;
-        private NumericUpDown nudSD;
-        private NumericUpDown nudSpag;
-        private NumericUpDown nudIT;
-        private NumericUpDown nudC;
-        private NumericUpDown nudBW;
+        private TextBox txtResult;
+        private Label lblOrders;
     }
 }

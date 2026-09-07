@@ -27,11 +27,20 @@ namespace CafeSystem
             }
         }
 
+        
         public BindingList<Class1> Order = new BindingList<Class1>();
 
+        
 
-
-
+        public void CalculateTotal()
+        {
+            decimal total = 0;
+            foreach (Class1 item in Order)
+            {
+                total += item.price;
+            }
+            txtResult.Text = $"₱ {total:0.00}";
+        }
 
 
         private void label1_Click(object sender, EventArgs e)
@@ -60,7 +69,8 @@ namespace CafeSystem
             Class1 order = new Class1("Burger", 85.00m);
             Order.Add(order);
             Orders();
-            
+            CalculateTotal();
+
 
 
         }
@@ -71,6 +81,7 @@ namespace CafeSystem
             Class1 order = new Class1("Chicken Sandwich", 75.00m);
             Order.Add(order);
             Orders();
+            CalculateTotal();
 
         }
 
@@ -88,6 +99,7 @@ namespace CafeSystem
             Class1 order = new Class1("Spaghetti", 95.00m);
             Order.Add(order);
             Orders();
+            CalculateTotal();
         }
 
         private void btnSoftDrink(object sender, EventArgs e)
@@ -96,6 +108,7 @@ namespace CafeSystem
             Class1 order = new Class1("Soft Drink", 45.00m);
             Order.Add(order);
             Orders();
+            CalculateTotal();
         }
 
         private void btnSDrink_Click(object sender, EventArgs e)
@@ -104,6 +117,7 @@ namespace CafeSystem
             Class1 order = new Class1("SoftDrink", 35.00m);
             Order.Add(order);
             Orders();
+            CalculateTotal();
         }
 
         private void btnTea_Click(object sender, EventArgs e)
@@ -112,6 +126,7 @@ namespace CafeSystem
             Class1 order = new Class1("Iced Tea", 40.00m);
             Order.Add(order);
             Orders();
+            CalculateTotal();
         }
 
         private void btnWater_Click(object sender, EventArgs e)
@@ -120,6 +135,7 @@ namespace CafeSystem
             Class1 order = new Class1("Bottled Water", 25.00m);
             Order.Add(order);
             Orders();
+            CalculateTotal();
         }
 
         private void btnCoffee_Click(object sender, EventArgs e)
@@ -128,10 +144,18 @@ namespace CafeSystem
             Class1 order = new Class1("Coffee", 45.00m);
             Order.Add(order);
             Orders();
+            CalculateTotal();
         }
 
         private void btnOrder_Click(object sender, EventArgs e)
         {
+
+
+
+            MessageBox.Show("=======================\nCodeffee\n======================= \nOrder Summary:\n\n" + string.Join("\n", Order.Select(o => $"{ o.order} - ₱ { o.price:0.00} ")) + $"\n\nTotal: ₱ { Order.Sum(o => o.price):0.00}\n\nThank you for your order!"
+
+
+                ) ;
 
         }
         public void Orders()
@@ -147,7 +171,15 @@ namespace CafeSystem
 
         public void nudBurger_ValueChanged(object sender, EventArgs e)
         {
-           
+
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            
+            Order.Clear();
+            View.Refresh();
+            CalculateTotal();
         }
     }
 }
